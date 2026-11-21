@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 16px;
+  background: #e3e6eb;
+  color: #111827;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  padding: 16px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0b57d0;
+  text-decoration: none;
+}
+
+.navbar nav a {
+  margin-left: 24px;
+  color: #111827;
+  text-decoration: none;
+}
+
+.navbar nav a:hover {
+  color: #0b57d0;
+}
+
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+#progress-text {
+  font-weight: bold;
+}
+
+#question {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+/* 
+.option {
+  display: block;
+  padding: 14px 18px;
+  margin-bottom: 14px;
+  background: #e9eefa;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background: #d6e2f8;
+}
+
+.option input {
+  margin-right: 10px;
+} */
+
+
+.option {
+  position: relative;
+  display: block;
+  padding: 14px 18px;
+  margin-bottom: 14px;
+  background: #e9eefa;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background: #d6e2f8;
+  border-color: #0b57d0;
+}
+
+.option input {
+  position: absolute;
+  opacity: 0;
+}
+
+.option:has(input:checked) {
+  background: #0b57d0;
+  border-color: #0b57d0;
+  color: white;
+}
+
+
+
+button {
+  display: block;
+  margin-left: auto;
+  padding: 16px 56px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: #0b57d0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0847a8;
+}
+
+.score-card {
+  padding: 24px;
+  text-align: center;
+  background: #e9eefa;
+  border-radius: 10px;
+}
+
+#score {
+  margin: 0;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#message {
+  margin: 4px 0 0;
+  font-size: 20px;
+}
+
+.review-item {
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  border-radius: 6px;
+}
+
+.review-item h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.review-item p {
+  margin: 0;
+}
+
+.got-right {
+  color: #1e7b45;
+  background: #e4f4ea;
+}
+
+.got-wrong {
+  color: #b3261e;
+  background: #fbe7e5;
+}
+
+#restart-btn {
+  margin-top: 20px;
+}
+
+#timer {
+  font-weight: bold;
+  color: #b3261e;
+}
+
+
+.start-card {
+  max-width: 520px;
+  margin: 60px auto 0;
+  padding: 48px 28px;
+  text-align: center;
+  background: white;
+  border-radius: 10px;
+}
+
+.start-card h1 {
+  margin: 0 0 8px;
+  color: #0b57d0;
+  font-size: 40px;
+}
+
+.start-card p {
+  margin: 0;
+  font-size: 18px;
+  color: #5b6577;
+}
+
+.start-btn {
+  margin: 32px auto 0;
+  padding: 22px 90px;
+  font-size: 26px;
+}
